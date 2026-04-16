@@ -10,9 +10,22 @@
 		EA886CD22F86910A0094A8CE /* night-logger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "night-logger.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		EA886CEB2F8697B30094A8CE /* Exceptions for "night-logger" folder in "night-logger" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = EA886CD12F86910A0094A8CE /* night-logger */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		EA886CD42F86910A0094A8CE /* night-logger */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				EA886CEB2F8697B30094A8CE /* Exceptions for "night-logger" folder in "night-logger" target */,
+			);
 			path = "night-logger";
 			sourceTree = "<group>";
 		};
@@ -254,6 +267,8 @@
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "night-logger/Info.plist";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "NightLogger listens for sounds while you sleep";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -298,6 +313,8 @@
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "night-logger/Info.plist";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "NightLogger listens for sounds while you sleep";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;

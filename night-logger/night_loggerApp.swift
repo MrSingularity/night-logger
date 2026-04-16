@@ -4,14 +4,16 @@
 //
 //  Created by Gabriel Gillmann on 08.04.2026.
 //
-
 import SwiftUI
 
 @main
 struct night_loggerApp: App {
+    @StateObject private var sessionStore = SessionStore()
+
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(sessionStore)
         }
     }
 }

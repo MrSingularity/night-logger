@@ -1,24 +1,20 @@
-//
-//  ContentView.swift
-//  night-logger
-//
-//  Created by Gabriel Gillmann on 08.04.2026.
-//
-
 import SwiftUI
 
 struct ContentView: View {
-    var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-        }
-        .padding()
-    }
-}
+    @EnvironmentObject var store: SessionStore
 
-#Preview {
-    ContentView()
+    var body: some View {
+        TabView {
+            RecordingView()
+                .tabItem {
+                    Label("Record", systemImage: "moon.zzz.fill")
+                }
+
+            DashboardView()
+                .tabItem {
+                    Label("Dashboard", systemImage: "chart.bar.fill")
+                }
+        }
+        .accentColor(Color("AccentNight"))
+    }
 }
